@@ -1,0 +1,107 @@
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script src="js/TeResRegister.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" type="text/css" />
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+			.sidebar-nav {
+				padding: 9px 0;
+			}
+		</style>
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-responsive.css" type="text/css" />
+        
+		<title>TeRes Register</title>
+	</head>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+				<a class="brand" href="#">TeRes Register</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+					</ul>
+					<p class="navbar-text pull-right">
+						Follow me <a href="https://twitter.com/#!/bilyakudan">@bilyakudan</a>
+					</p>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span3">
+				<div class="well sidebar-nav">
+					<ul class="nav nav-list">
+						<li class="nav-header">
+							Register
+						</li>
+						<li>
+							学年学科:
+							<input type="text" class="span2" size="5" style="width:20%;height:7%;" id="gakunen" name="gakunen" placeholder='1K' >
+                            <br>
+							本名:　　
+							<input type="text" size="5" style="width:50%;height:7%;" id="name" name="name" placeholder='電通多浪' >
+                            <br>
+							学籍番号:
+							<input type="text" size="5" style="width:50%;height:7%;" id="id" name="id" placeholder='9999999' >
+							<br>
+							電話番号:
+							<input type="phone" size="5" style="width:50%;height:7%;" id="phone" name="phone" placeholder='0120-888-888'>
+                            <br>
+                            ML登録メールアドレス:
+							<input type="email" size="5" style="width:100%;height:7%;" id="ML" name="ML" placeholder='hoge@gmail.com' >
+                            <br>
+							<input class="btn btn-primary btn-large" type="button" value="登録" name="myButton" id="myButton" onclick="set()">
+						</li>
+					</ul>
+				</div><!--/.well -->
+            </div><!--/span-->
+            <div class="span9">
+                <h2>登録リスト</h2>
+                <div id="list">
+                    <table id="list_table"  border=1 bgcolor="#00000"  cellspacing=0 >
+                        <tr bgcolor="#cccccc">
+                            <th></th>
+                            <th>学年学科</th>
+                            <th>本名</th>
+                            <th>学籍番号</th>
+                            <th>電話番号</th>
+                            <th>ML登録メールアドレス</th>
+                        </tr>
+                        <tr align=center>
+                            <td style="color:#009900">例</td>
+                            <td style="color:#009900">1K</td>
+                            <td style="color:#009900">電通多浪</td>
+                            <td style="color:#009900">9999999</td>
+                            <td style="color:#009900">0120-888-888</td>
+                            <td style="color:#009900">hoge@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="span4">
+                <h3>ML用コピペ</h3>
+                    <textarea style="width:100%;height:50%;" name="ML_copy" id="ML_copy" readonly></textarea>
+            </div><!--/span-->
+            <div class="span4">
+                <h3>Wiki用コピペ</h3>
+                    <textarea style="width:100%;height:50%;" name="wiki_copy" id="wiki_copy" readonly></textarea>
+            </div><!--/span-->
+
+        </div><!--/row-->
+        <div class="container">
+            <footer>
+            <p>
+            &copy; henteko 2012
+            </p>
+            </footer>
+        </div>
+    </html>
